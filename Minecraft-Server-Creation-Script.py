@@ -27,12 +27,14 @@ def checking_eula():
             start_server()
 
 
-requested_ram = input("How much ram would you like your server to have in MB (Ex. 1024, 2048, 4096, etc)? ")
+requested_server_version = input("What server version would you like to run (Ex. 1.17, 1.18.1, 1.19.3, etc? ")
+
+requested_ram = input("How much ram would you like your server to have in (Ex. 1024, 2048, 4096, etc)? ")
 
 if os.path.exists("spigot.jar") is False:
 
     # fetches the spigot.jar file
-    URL = "https://download.getbukkit.org/spigot/spigot-1.19.3.jar"
+    URL = "https://download.getbukkit.org/spigot/spigot-" + requested_server_version + ".jar"
 
     # downloads the data
     response = requests.get(URL)
