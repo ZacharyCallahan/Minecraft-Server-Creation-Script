@@ -27,7 +27,7 @@ def checking_eula():
             start_server()
 
 
-requested_server_version = input("What server version would you like to run (Ex. 1.17, 1.18.1, 1.19.3, etc? ")
+requested_server_version = input("What server version would you like to run (Ex. 1.17, 1.18.1, 1.19.3, etc)? ")
 
 requested_ram = input("How much ram would you like your server to have in (Ex. 1024, 2048, 4096, etc)? ")
 
